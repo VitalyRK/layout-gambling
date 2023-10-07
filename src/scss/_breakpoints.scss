@@ -1,0 +1,35 @@
+@mixin xl-d {
+  @media (max-width: (map-get($breakpoints, xxl) - 0.2px)) {
+    @content;
+  }
+}
+
+@mixin lg-d {
+  @media (max-width: (map-get($breakpoints, xl) - 0.2px)) {
+    @content;
+  }
+}
+
+@mixin md-d {
+  @media (max-width: (map-get($breakpoints, lg) - 0.2px)) {
+    @content;
+  }
+}
+
+@mixin sm-d {
+  @media (max-width: (map-get($breakpoints, md) - 0.2px)) {
+    @content;
+  }
+}
+
+@mixin xs-d {
+  @media (max-width: (map-get($breakpoints, sm) - 0.2px)) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: (map-get($breakpoints, xs) - 0.2px)) {
+    @content;
+  }
+}
